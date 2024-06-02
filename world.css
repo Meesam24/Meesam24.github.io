@@ -1,5 +1,3 @@
-/* Common Styles */
-
 body {
   margin: 50px;
   font-family: 'Chinese Rocks Rg', sans-serif;
@@ -66,22 +64,30 @@ body {
   color: black; /* Change text color on hover */
 }
 
-/* Page-Specific Styles */
+main .parallax {     /* Styles the parallax section with a background image and fixed attachment. */
+  background-image: url('c4mx1lieddx31.png');
+  height: 2160px;
+  width: 3840px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
-.locations-header {
-  text-align: center;
+.locations-header { /* styles the header for the locations section. */
+  text-align: center; 
   padding: 20px;
   background-color: black;
   color: red;
 }
 
-.locations-header h1 {
+.locations-header h1 { /* Styles the main heading within the locations header. */
   font-size: 2.5rem;
   margin: 0;
   text-align: center;
 }
 
-.locations-list {
+.locations-list { /* Defines the layout for the locations list. */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,7 +95,7 @@ body {
   background-color: #000;
 }
 
-.location-item {
+.location-item { /* Styles each location item, including hover effects. */
   flex: 1 1 calc(50% - 40px);
   margin: 20px;
   background-color: black;
