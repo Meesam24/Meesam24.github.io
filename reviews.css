@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: #000;                                              
+  color: red;
+}
+
+.info-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: red; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+
+.intro {
+  background-image: url('reviews-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 20px auto;
+  text-shadow: 1px 1px 3px black;
+}
+
+.reviews-section {
+  padding: 40px;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.review-card {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px black;
+}
+
+.review-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: red;
+}
+
+.review-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.reviewer {
+  font-style: italic;
+  color: red;
+}
+
+
+
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.info-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.info-item h2 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-item p, .info-item a {
+  color: red;
+  font-size: 1rem;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.info-item a {
+  text-decoration: underline;
+}
+
+.info-item a:hover {
+  color: #ff0000;
+}
+
+.info-item a.official-site {
+  color: #ff0000;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.info-item a.official-site::after {
+  content: " ↗";
+}
+
+.review-form-section {
+  padding: 40px;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+.review-form-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#review-form input,
+#review-form textarea {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: black;
+  color: red;
+}
+
+#review-form button {
+  padding: 10px 20px;
+  background-color: red;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#review-form button:hover {
+  background-color: red;
+}
