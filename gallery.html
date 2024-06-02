@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Wall</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
+</head>
+<body>
+  <div class="logo">
+    <img src="bd82dbeff604e48eea5d10532df0cb64.jpg" alt="Rockstar Games">
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+    ☰
+</div>
+</header>
+<nav class="sidebar">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="world.html">World</a></li>
+    <li><a href="gang.html">Meet the gang</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+</ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<main>
+  <h1>Gallery Wall</h1>
+  <section class="gallery">
+      <!-- Images will be loaded dynamically here -->
+      <div class="photo-item">
+          <img src="arthur_morgan_with_black_background_4k_hd_red_dead_redemption_2-3840x2160.jpg" alt="Photo 1" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+          <img src="landscape_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+          <img src="train_with_smoke_in_background_of_trees_and_mountain_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+          <img src="cowboy_is_sitting_on_horse_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+          <img src="western-red-dead-redemption-2-monochrome-dark-screen-shot-hd-wallpaper-preview.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+          <img src="a_man_is_sitting_on_horse_in_forest_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="Arthur Morgan 2 .jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="back_view_of_a_man_with_horse_in_background_of_mountain_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo 2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="guarma_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="legend_of_the_west_hd_red_dead_redemption_2-3840x2160.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="cowboy_john_marston_with_guns_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="guns_holding_hands_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="horse_riding_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+      <img src="arthur_morgan_fire_red_dead_redemption_4k_hd_red_dead_redemption_2-3840x2160.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="john_marston_hd_red_dead_redemption_2-2560x1440.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="cold_landscape_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="arthur_morgan_sadie_adler_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="dope_4k_hd_red_dead_redemption_2-3840x2160.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="arthur_morgan_with_guns_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <div class="photo-item">
+        <img src="cowboys_on_horse_with_background_of_cloudy_sky_with_moon_and_stars_hd_red_dead_redemption_2-1920x1080.jpg" alt="Photo2" onclick="openLightbox(this)">
+      </div>
+      <!-- Add more image items here -->
+  </section>
+  <div class="lightbox" id="lightbox">
+      <button onclick="closeLightbox()">×</button>
+      <img src="" alt="" id="lightbox-img">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+  </div>
+</main>
+
+
+<footer>
+  <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <img src="bd82dbeff604e48eea5d10532df0cb64.jpg" alt="Rockstar Games Logo">
+          </div>
+          <div class="social-icons">
+              <a href="https://www.instagram.com/rockstargames/" target="_blank">
+                  <img src="images (1).png" alt="Instagram">
+              </a>
+              <a href="https://www.youtube.com/@RockstarGames/featured" target="_blank">
+                  <img src="youtube-dark-square.png" alt="YouTube">
+              </a>
+              <a href="https://www.twitch.tv/rockstargames" target="_blank">
+                  <img src="iconmonstr-twitch-2.png" alt="Twitch">
+              </a>
+              <a href="https://x.com/rockstargames" target="_blank">
+                  <img src="X_icon_2.svg" alt="X">
+              </a>
+          </div>
+      </div>
+  <p>&copy; 2024 Red Dead Redemption 2. All rights reserved.</p>
+  <footer>
+    <div class="info-item">
+    <p><a href="https://www.rockstargames.com/corpinfo" target="_blank">Corporate</a>
+    <a href="https://www.rockstargames.com/privacy" target="_blank">Privacy</a>
+    <a href="https://www.rockstargames.com/cookies" target="_blank">Cookie Policy</a>
+    <a href="https://www.rockstargames.com/legal" target="_blank">Legal</a>
+<a href="https://www.rockstargames.com/ccpa" target="_blank">Do Not Sell My Personal Information</a></p>
+</div>
+</footer>
+
+
+<script>
+  // Inline JavaScript for the gallery page
+  function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+  }
+
+  var images = []; // Array to store image URLs
+  var currentIndex = 0; // Index of currently displayed image
+
+  function openLightbox(img) {
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+      currentIndex = Array.from(img.parentNode.parentNode.children).indexOf(img.parentNode);
+      images = Array.from(img.parentNode.parentNode.querySelectorAll('img'));
+  }
+
+  function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+  }
+
+  function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById('lightbox-img').src = images[currentIndex].src;
+  }
+
+  function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      document.getElementById('lightbox-img').src = images[currentIndex].src;
+  }
+
+  function toggleMenu() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('open');
+  }
+
+  
+</script>
+</body>
+</html>
