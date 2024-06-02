@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: black;                                         
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: red; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main .parallax {
+  background-image: url('featured-5.avif');
+  height: 2160px;
+  width: 3840px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Sidebar icons */
+.sidebar ul li a::before {
+  margin-right: 10px;
+}
+
+/* Profile card */
+.profile-card {
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-card h3 {
+  margin: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+.profile-card p {
+  margin: 10px;
+  color: red;
+}
+
+/* Hover effect */
+.profile-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Grid layout for profiles */
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .profiles {
+    grid-template-columns: repeat(4, 1fr); /* Ensure 4 columns for wider screens */
+  }
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
