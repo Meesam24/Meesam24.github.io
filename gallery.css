@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: black;                                           
+  color: red;
+}
+
+.info-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: red; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.lightbox .prev {
+  left: -1400px;
+}
+
+.lightbox .next {
+  right: 30px;
+}
+
+.footer {
+  background-color: black;
+  color: red;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.info-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.info-item h2 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-item p, .info-item a {
+  color: red;
+  font-size: 1rem;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.info-item a {
+  text-decoration: underline;
+}
+
+.info-item a:hover {
+  color: #ff0000;
+}
+
+.info-item a.official-site {
+  color: #ff0000;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.info-item a.official-site::after {
+  content: " ↗";
+}
