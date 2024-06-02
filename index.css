@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+                                                
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: red; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main .parallax {
+  background-image: url('rdr.jpeg');
+  height: 2160px;
+  width: 3840px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.platform-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.platform-icons a {
+  text-decoration: none;
+  color: red;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.platform-icons img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.platform-icons p {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+main .description {
+  padding: 20px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  font-size: 36px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: black;
+  color: red;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.info-item h2 {
+  color: #ff0000;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-item p, .info-item a {
+  color: red;
+  font-size: 1rem;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.info-item a {
+  text-decoration: underline;
+}
+
+.info-item a:hover {
+  color: #ff0000;
+}
+
+.info-item a.official-site {
+  color: #ff0000;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.info-item a.official-site::after {
+  content: " ↗";
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #000;
+}
+
+.video-section iframe {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-section iframe:hover {
+  transform: scale(1.05);
+}
+
+.photos-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #000;
+}
+
+.photo-item {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  max-width: calc(25% - 20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
